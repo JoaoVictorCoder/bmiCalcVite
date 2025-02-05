@@ -1,5 +1,4 @@
 import "./App.css";
-import { createClient } from "@supabase/supabase-js";
 
 function app() {
 	let mediumBmi;
