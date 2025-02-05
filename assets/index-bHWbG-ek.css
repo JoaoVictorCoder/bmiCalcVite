@@ -1,0 +1,1 @@
+body{all:unset;font-size:1.5rem;padding:1.5rem;box-sizing:border-box}#calculator{display:flex;flex-direction:column;margin:1rem;gap:.2rem}#calculator>input{width:10rem;height:1.5rem;outline:none;border:solid .1rem;border-radius:.5rem}#calculator>label{font-size:1rem}#calculator>button{width:10rem;height:1.5rem;border:solid .1rem;border-radius:.5rem}#result{font-size:2rem}
