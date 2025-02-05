@@ -2,8 +2,13 @@ import "./App.css";
 import { createClient } from "@supabase/supabase-js";
 
 function app() {
+	let mediumBmi;
 	const bmiResult = document.createElement("h1");
 	bmiResult.setAttribute("id", "result");
+
+	const supabaseUrl = "https://eswczfkptvunqpywrykd.supabase.co";
+	const supabaseKey = process.env.SUPABASE_KEY;
+	const supabase = createClient(supabaseUrl, supabaseKey);
 
 	const calculate = () => {
 		const weightInput = document.getElementById("weightInput").value;
@@ -48,6 +53,7 @@ function app() {
 					Calculate
 				</button>
 			</div>
+			<h1>{mediumBmi}</h1>
 		</>
 	);
 }
